@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NoticasNT-BR</title>
   <script src="script.js" defer></script>
-    <link href="style.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
   </head>
 <body>
   <h1>Noticias do New York Times para o Brasil</h1>
@@ -13,16 +13,16 @@
     <div class="controls">
       <form>
         <p>
-          <label for="search">Enter a SINGLE search term (required): </label>
+          <label for="search">Insira um ÚNICO termo de pesquisa (obrigatório): </label>
           <input type="text" id="search" class="search" required>
         </p>
         <p>
-          <label for="start-date">Enter a start date (format YYYYMMDD): </label>
-          <input type="date" id="start-date" class="start-date" pattern="[0-9]{8}">
+          <label for="start-date">Insira uma data de inicio: </label>
+          <input type="date" id="start-date" class="start-date" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$/i">
         </p>
         <p>
-          <label for="end-date">Enter an end date (format YYYYMMDD): </label>
-          <input type="date" id="end-date" class="end-date" pattern="[0-9]{8}">
+          <label for="end-date">Insira uma data de termino: </label>
+          <input type="date" id="end-date" class="end-date" pattern="^(0[1-9]|[12][0-9]|3[01])/(0[1-9]|1[0-2])/\d{4}$/i">
         </p>
         <p>
           <button class="submit">Submit search</button>
