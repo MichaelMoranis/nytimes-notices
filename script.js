@@ -22,6 +22,23 @@ let pageNumber = 0;
 // Event listeners to control the functionality
 searchForm.addEventListener("submit", submitSearch);
 
+nextBtn.addEventListener("click", nextPage);
+previousBtn.addEventListener("click", previousPage);
+
+function nextPage(e) {
+    pageNumber++;
+    fetchResults(e);
+}
+
+function previousPage(e) {
+    if(pageNumber > 0) {
+        pageNumber--;
+    } else {
+        return;
+    }
+    fetchResults(e);
+}
+
 function submitSearch(e) {
     pageNumber = 0;
     fetchResults(e);
