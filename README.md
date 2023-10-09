@@ -1,2 +1,2 @@
 # nytimes-notices
-application to display articles from the new york times making use of their restful apis
+aplicativo para exibir artigos do New York Times fazendo uso de suas APIs tranquilas
